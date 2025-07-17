@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  travel_planner:
+    image: travel_planner
+    container_name: travel_planner_app
+    ports:
+      - "6065:6065"
+    env_file:
+      - .env
